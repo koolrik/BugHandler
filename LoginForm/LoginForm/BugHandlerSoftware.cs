@@ -12,11 +12,30 @@ namespace LoginForm
 {
     public partial class BugHandlerSoftware : Form
     {
-
+        public SessionModule session { get; set; }
         public BugHandlerSoftware()
         {
             InitializeComponent();
         }
-        
+
+        public BugHandlerSoftware(SessionModule xyz)
+        {
+            InitializeComponent();
+            session = xyz;
+        }
+
+        private void insertBugToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InsertBug cde = new InsertBug(session);
+            cde.MdiParent = this;
+            cde.Show();
+        }
+
+        private void solutionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BugSolution bs = new BugSolution(session);
+            bs.MdiParent = this;
+            bs.Show();
+        }
     }
 }

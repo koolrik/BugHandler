@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LoginForm
 {
-    public partial class BugHandlerSolution : Form
+    public partial class BugHandlerProgrammer : Form
     {
-        public BugHandlerSolution()
+        public BugHandlerProgrammer()
         {
             InitializeComponent();
-        }
-
-        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
     }
 }

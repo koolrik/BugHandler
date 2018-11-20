@@ -13,10 +13,10 @@ namespace LoginForm
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BugHandlerEntities : DbContext
+    public partial class BugHandlerEntities1 : DbContext
     {
-        public BugHandlerEntities()
-            : base("name=BugHandlerEntities")
+        public BugHandlerEntities1()
+            : base("name=BugHandlerEntities1")
         {
         }
     
@@ -25,6 +25,7 @@ namespace LoginForm
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Issue> Issues { get; set; }
         public virtual DbSet<Login> Logins { get; set; }
     }
 }

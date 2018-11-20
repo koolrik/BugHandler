@@ -98,7 +98,7 @@
             this.button1.BackColor = System.Drawing.Color.Brown;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(433, 366);
+            this.button1.Location = new System.Drawing.Point(470, 366);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 48);
             this.button1.TabIndex = 6;
@@ -110,7 +110,7 @@
             this.button2.BackColor = System.Drawing.Color.Brown;
             this.button2.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(559, 366);
+            this.button2.Location = new System.Drawing.Point(590, 366);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 48);
             this.button2.TabIndex = 7;

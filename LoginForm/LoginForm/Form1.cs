@@ -32,9 +32,12 @@ namespace LoginForm
             sda.Fill(dt);
             if(dt.Rows.Count == 1)
             {
-                BugHandlerEntities bte = new BugHandlerEntities();
+                BugHandlerEntities1 bte = new BugHandlerEntities1();
                 var role = bte.Logins.Where(a => a.Username == textBox1.Text).SingleOrDefault();
-                if(role.Role=="admin")
+                SessionModule session = new SessionModule();
+                session.Username = role.Username;
+
+                if (role.Role=="admin")
                 {
                     BugHandlerSoftware bhs = new BugHandlerSoftware();
                     this.Hide();
@@ -42,10 +45,12 @@ namespace LoginForm
                 }
                 else if (role.Role == "Client")
                 {
-
+                    BugHandlerSoftware abc = new BugHandlerSoftware(session);
+                    this.Hide();
+                    abc.Show();
                 }
                 else
-                {
+                { 
 
                 }
                 
@@ -60,6 +65,11 @@ namespace LoginForm
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

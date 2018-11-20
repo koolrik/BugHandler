@@ -35,10 +35,10 @@
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.solutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.repositoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewOnlineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.solutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -85,6 +85,14 @@
             this.insertBugToolStripMenuItem.Name = "insertBugToolStripMenuItem";
             this.insertBugToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.insertBugToolStripMenuItem.Text = "Insert Bug";
+            this.insertBugToolStripMenuItem.Click += new System.EventHandler(this.insertBugToolStripMenuItem_Click);
+            // 
+            // solutionToolStripMenuItem
+            // 
+            this.solutionToolStripMenuItem.Name = "solutionToolStripMenuItem";
+            this.solutionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.solutionToolStripMenuItem.Text = "Solution";
+            this.solutionToolStripMenuItem.Click += new System.EventHandler(this.solutionToolStripMenuItem_Click);
             // 
             // signOutToolStripMenuItem
             // 
@@ -103,14 +111,8 @@
             // viewOnlineToolStripMenuItem
             // 
             this.viewOnlineToolStripMenuItem.Name = "viewOnlineToolStripMenuItem";
-            this.viewOnlineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewOnlineToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.viewOnlineToolStripMenuItem.Text = "View Online";
-            // 
-            // solutionToolStripMenuItem
-            // 
-            this.solutionToolStripMenuItem.Name = "solutionToolStripMenuItem";
-            this.solutionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.solutionToolStripMenuItem.Text = "Solution";
             // 
             // BugHandlerSoftware
             // 
