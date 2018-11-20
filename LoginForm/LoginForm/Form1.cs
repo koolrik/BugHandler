@@ -32,7 +32,23 @@ namespace LoginForm
             sda.Fill(dt);
             if(dt.Rows.Count == 1)
             {
+                BugHandlerEntities bte = new BugHandlerEntities();
+                var role = bte.Logins.Where(a => a.Username == textBox1.Text).SingleOrDefault();
+                if(role.Role=="admin")
+                {
+                    BugHandlerSoftware bhs = new BugHandlerSoftware();
+                    this.Hide();
+                    bhs.Show();
+                }
+                else if (role.Role == "Client")
+                {
 
+                }
+                else
+                {
+
+                }
+                
             }
         }
 

@@ -34,10 +34,11 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.repositoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.repositoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewOnlineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.solutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -73,18 +74,11 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.insertBugToolStripMenuItem,
+            this.solutionToolStripMenuItem,
             this.signOutToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
-            // 
-            // repositoryToolStripMenuItem
-            // 
-            this.repositoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewOnlineToolStripMenuItem});
-            this.repositoryToolStripMenuItem.Name = "repositoryToolStripMenuItem";
-            this.repositoryToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.repositoryToolStripMenuItem.Text = "Repository";
             // 
             // insertBugToolStripMenuItem
             // 
@@ -96,13 +90,27 @@
             // 
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
             this.signOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.signOutToolStripMenuItem.Text = "Sign Out";
+            this.signOutToolStripMenuItem.Text = "Exit";
+            // 
+            // repositoryToolStripMenuItem
+            // 
+            this.repositoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewOnlineToolStripMenuItem});
+            this.repositoryToolStripMenuItem.Name = "repositoryToolStripMenuItem";
+            this.repositoryToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.repositoryToolStripMenuItem.Text = "Repository";
             // 
             // viewOnlineToolStripMenuItem
             // 
             this.viewOnlineToolStripMenuItem.Name = "viewOnlineToolStripMenuItem";
             this.viewOnlineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewOnlineToolStripMenuItem.Text = "View Online";
+            // 
+            // solutionToolStripMenuItem
+            // 
+            this.solutionToolStripMenuItem.Name = "solutionToolStripMenuItem";
+            this.solutionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.solutionToolStripMenuItem.Text = "Solution";
             // 
             // BugHandlerSoftware
             // 
@@ -134,6 +142,7 @@
         private System.Windows.Forms.ToolStripMenuItem signOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem repositoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewOnlineToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem solutionToolStripMenuItem;
     }
 }
 
