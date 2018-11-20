@@ -66,13 +66,13 @@
             // viewBugToolStripMenuItem
             // 
             this.viewBugToolStripMenuItem.Name = "viewBugToolStripMenuItem";
-            this.viewBugToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.viewBugToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewBugToolStripMenuItem.Text = "View Bug";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // repositoryToolStripMenuItem
@@ -86,7 +86,7 @@
             // viewOnlineToolStripMenuItem
             // 
             this.viewOnlineToolStripMenuItem.Name = "viewOnlineToolStripMenuItem";
-            this.viewOnlineToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.viewOnlineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewOnlineToolStripMenuItem.Text = "View Online";
             // 
             // statusStrip

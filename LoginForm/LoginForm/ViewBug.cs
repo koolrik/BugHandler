@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LoginForm
 {
-    public partial class BugHandlerAdmin : Form
+    public partial class ViewBug : Form
     {
-        public BugHandlerAdmin()
+        public ViewBug()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
