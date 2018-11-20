@@ -37,9 +37,9 @@ namespace LoginForm
                 SessionModule session = new SessionModule();
                 session.Username = role.Username;
 
-                if (role.Role=="admin")
+                if (role.Role=="Admin")
                 {
-                    BugHandlerSoftware bhs = new BugHandlerSoftware();
+                    BugHandlerAdmin bhs = new BugHandlerAdmin(session);
                     this.Hide();
                     bhs.Show();
                 }
@@ -51,7 +51,7 @@ namespace LoginForm
                 }
                 else
                 { 
-
+                    
                 }
                 
             }

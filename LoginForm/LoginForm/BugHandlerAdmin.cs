@@ -12,9 +12,23 @@ namespace LoginForm
 {
     public partial class BugHandlerAdmin : Form
     {
+        public SessionModule session { get; set; }
         public BugHandlerAdmin()
         {
             InitializeComponent();
+        }
+
+        public BugHandlerAdmin(SessionModule sm)
+        {
+            InitializeComponent();
+            
+        }
+
+        private void historyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BugDetail bd = new BugDetail(session);
+            bd.MdiParent = this;
+            bd.Show();
         }
     }
 }
