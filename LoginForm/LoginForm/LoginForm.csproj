@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BugDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BugDetail.Designer.cs">
+      <DependentUpon>BugDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="BugHandlerAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="ViewBug.Designer.cs">
       <DependentUpon>ViewBug.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BugDetail.resx">
+      <DependentUpon>BugDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BugHandlerAdmin.resx">
       <DependentUpon>BugHandlerAdmin.cs</DependentUpon>
     </EmbeddedResource>
