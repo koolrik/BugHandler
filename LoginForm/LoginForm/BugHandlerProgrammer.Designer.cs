@@ -56,12 +56,14 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // viewBugToolStripMenuItem
             // 
             this.viewBugToolStripMenuItem.Name = "viewBugToolStripMenuItem";
             this.viewBugToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewBugToolStripMenuItem.Text = "View Bug";
+            this.viewBugToolStripMenuItem.Click += new System.EventHandler(this.viewBugToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -80,7 +82,7 @@
             // viewOnlineToolStripMenuItem
             // 
             this.viewOnlineToolStripMenuItem.Name = "viewOnlineToolStripMenuItem";
-            this.viewOnlineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewOnlineToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.viewOnlineToolStripMenuItem.Text = "View Online";
             // 
             // BugHandlerProgrammer

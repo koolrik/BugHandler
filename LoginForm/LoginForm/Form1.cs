@@ -50,8 +50,10 @@ namespace LoginForm
                     abc.Show();
                 }
                 else
-                { 
-                    
+                {
+                    BugHandlerProgrammer bhp = new BugHandlerProgrammer(session);
+                    this.Hide();
+                    bhp.Show();
                 }
                 
             }
