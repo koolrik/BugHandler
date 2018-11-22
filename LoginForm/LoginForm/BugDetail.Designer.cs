@@ -69,7 +69,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(394, 20);
+            this.label3.Location = new System.Drawing.Point(26, 235);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 20);
             this.label3.TabIndex = 2;
@@ -118,16 +118,16 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(30, 139);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(310, 227);
+            this.richTextBox1.Size = new System.Drawing.Size(310, 78);
             this.richTextBox1.TabIndex = 7;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(398, 53);
+            this.richTextBox2.Location = new System.Drawing.Point(26, 272);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(314, 224);
+            this.richTextBox2.Size = new System.Drawing.Size(314, 79);
             this.richTextBox2.TabIndex = 8;
             this.richTextBox2.Text = "";
             this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
@@ -162,7 +162,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 43);
             this.button2.TabIndex = 11;
-            this.button2.Text = "E&xit";
+            this.button2.Text = "B&ack";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // comboBox2
@@ -176,9 +176,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(626, 282);
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(398, 20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(314, 252);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);

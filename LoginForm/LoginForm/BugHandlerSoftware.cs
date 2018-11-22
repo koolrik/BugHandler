@@ -37,5 +37,10 @@ namespace LoginForm
             bs.MdiParent = this;
             bs.Show();
         }
+
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -84,7 +84,8 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(27, 143);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(329, 95);
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(329, 105);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -120,7 +121,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 48);
             this.button2.TabIndex = 7;
-            this.button2.Text = "E&xit";
+            this.button2.Text = "B&ack";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // pictureBox1

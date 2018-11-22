@@ -116,6 +116,7 @@
             // 
             // image1
             // 
+            this.image1.BackColor = System.Drawing.Color.White;
             this.image1.Location = new System.Drawing.Point(395, 33);
             this.image1.Name = "image1";
             this.image1.Size = new System.Drawing.Size(322, 238);

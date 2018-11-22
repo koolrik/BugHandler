@@ -57,16 +57,22 @@ namespace LoginForm
                 }
                 
             }
+            else
+            {
+                MessageBox.Show("Incorrect Username or Password!");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form2 fgh = new Form2();
+            this.Hide();
+            fgh.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
