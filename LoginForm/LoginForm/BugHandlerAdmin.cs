@@ -25,7 +25,7 @@ namespace LoginForm
             InitializeComponent();
             
         }
-
+        //to go to the windows form BugDetail in the MDI form
         private void historyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BugDetail bd = new BugDetail(session);
@@ -37,7 +37,7 @@ namespace LoginForm
         {
 
         }
-
+        //using driver to cconnect to github using saved username and password 
         private void viewOnlineToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -49,7 +49,7 @@ namespace LoginForm
             driver.FindElement(By.Id("password")).SendKeys("Koolrik1590");
           
         }
-
+        //to close the window and open FOrm1
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -66,7 +66,7 @@ namespace LoginForm
         {
 
         }
-
+        //to show the AddUser form in the MDI Windows form
         private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddUser au = new AddUser();

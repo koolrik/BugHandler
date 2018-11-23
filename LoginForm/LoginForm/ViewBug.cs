@@ -46,6 +46,7 @@ namespace LoginForm
                 }
                 con.Close();
             }
+            //to display any error occured
             catch (Exception)
             {
                 MessageBox.Show("Error Occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -114,13 +115,13 @@ namespace LoginForm
                 MessageBox.Show("Error Occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        //to close the form
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
             
         }
-
+        //to display the color code in the text box
         private void textEditorControl1_Load(object sender, EventArgs e)
         {
             string dric = Application.StartupPath;
@@ -132,7 +133,7 @@ namespace LoginForm
                 textEditorControl1.SetHighlighting("C#");
             }
         }
-
+        //to display the color code in the text box
         private void textEditorControl2_Load(object sender, EventArgs e)
         {
             string dric = Application.StartupPath;

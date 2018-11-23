@@ -34,7 +34,7 @@ namespace LoginForm
             MessageBox.Show("User Saved");
 
         }
-
+        //close the form and open new form Form1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -160,7 +160,7 @@ namespace LoginForm
         {
 
         }
-
+        //to close the application in the MDI form
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();

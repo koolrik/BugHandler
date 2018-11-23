@@ -20,7 +20,7 @@ namespace LoginForm
         {
             InitializeComponent();
         }
-
+        //setting parameters
         public BugHandlerProgrammer(SessionModule sm)
         {
             InitializeComponent();
@@ -31,14 +31,14 @@ namespace LoginForm
         {
             
         }
-
+        //to show the ViewBug Form
         private void viewBugToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ViewBug di = new ViewBug(session);
             di.MdiParent = this;
             di.Show();
         }
-
+        //to connect to the github online site using saved credentials
         private void viewOnlineToolStripMenuItem_Click(object sender, EventArgs e)
         {
             IWebDriver driver = new ChromeDriver();
@@ -48,7 +48,7 @@ namespace LoginForm
             driver.FindElement(By.Id("login_field")).SendKeys("koolrik");
             driver.FindElement(By.Id("password")).SendKeys("Koolrik1590");
         }
-
+        //to close the application and open the Form1
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 jkl = new Form1();

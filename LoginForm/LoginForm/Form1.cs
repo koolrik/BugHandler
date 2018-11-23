@@ -23,7 +23,7 @@ namespace LoginForm
         {
 
         }
-
+        //connecting to the database and loading the windows
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -58,19 +58,20 @@ namespace LoginForm
                 }
                 
             }
+            //to display error in wrong password
             else
             {
                 MessageBox.Show("Incorrect Username or Password!");
             }
         }
-
+        //to closethe from and open new form Form2
         private void button2_Click(object sender, EventArgs e)
         {
             Form2 fgh = new Form2();
             this.Hide();
             fgh.Show();
         }
-
+        //tocompletely close the application
         private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();

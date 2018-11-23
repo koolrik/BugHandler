@@ -49,7 +49,7 @@ namespace LoginForm
                 MessageBox.Show("Error Occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        //to hide the window application
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -100,7 +100,7 @@ namespace LoginForm
         {
 
         }
-
+        //to showthe color code in the textbox
         private void textEditorControl1_Load(object sender, EventArgs e)
         {
             string dric = Application.StartupPath;
@@ -112,7 +112,7 @@ namespace LoginForm
                 textEditorControl1.SetHighlighting("C#");
             }
         }
-
+        //to showthe color code in the textbox
         private void textEditorControl2_Load(object sender, EventArgs e)
         {
             string dric = Application.StartupPath;

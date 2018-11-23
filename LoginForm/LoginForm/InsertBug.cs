@@ -21,7 +21,7 @@ namespace LoginForm
         {
             InitializeComponent();
         }
-
+        //setting parameters
         public InsertBug(SessionModule sm)
         {
             InitializeComponent();
@@ -85,14 +85,14 @@ namespace LoginForm
         {
 
         }
-
+        //to close the form
         private void button3_Click(object sender, EventArgs e)
         {
             
             this.Hide();
             
         }
-
+        //to display the color code in the textbox
         private void textEditorControl1_Load(object sender, EventArgs e)
         {
             string dric = Application.StartupPath;
