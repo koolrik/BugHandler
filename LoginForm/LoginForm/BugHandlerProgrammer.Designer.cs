@@ -78,12 +78,14 @@
             this.viewOnlineToolStripMenuItem.Name = "viewOnlineToolStripMenuItem";
             this.viewOnlineToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.viewOnlineToolStripMenuItem.Text = "View Online";
+            this.viewOnlineToolStripMenuItem.Click += new System.EventHandler(this.viewOnlineToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // BugHandlerProgrammer
             // 

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ICSharpCode.TextEditor.Document;
 
 namespace LoginForm
 {
@@ -98,6 +99,18 @@ namespace LoginForm
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textEditorControl1_Load(object sender, EventArgs e)
+        {
+            string dric = Application.StartupPath;
+            FileSyntaxModeProvider fsmp;
+            if (Directory.Exists(dric))
+            {
+                fsmp = new FileSyntaxModeProvider(dric);
+                HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmp);
+                textEditorControl1.SetHighlighting("C#");
+            }
         }
     }
 }

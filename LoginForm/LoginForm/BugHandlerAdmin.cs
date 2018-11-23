@@ -41,11 +41,9 @@ namespace LoginForm
         private void viewOnlineToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-
             IWebDriver driver = new ChromeDriver();
 
             driver.Url = ("https://github.com/login");
-
 
             driver.FindElement(By.Id("login_field")).SendKeys("koolrik");
             driver.FindElement(By.Id("password")).SendKeys("Koolrik1590");
@@ -59,7 +57,17 @@ namespace LoginForm
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            Application.Exit();
+            
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

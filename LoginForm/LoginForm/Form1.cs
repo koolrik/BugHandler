@@ -26,6 +26,7 @@ namespace LoginForm
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\admin\Documents\BugHandler.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("Select Role from Login where Username = '" + textBox1.Text + "' and Password = '" + textBox2.Text + "' ",con);
             DataTable dt = new System.Data.DataTable();

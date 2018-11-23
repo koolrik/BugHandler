@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace LoginForm
 {
@@ -41,6 +43,16 @@ namespace LoginForm
         private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void viewOnlineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IWebDriver driver = new ChromeDriver();
+
+            driver.Url = ("https://github.com/login");
+
+            driver.FindElement(By.Id("login_field")).SendKeys("koolrik");
+            driver.FindElement(By.Id("password")).SendKeys("Koolrik1590");
         }
     }
 }
