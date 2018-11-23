@@ -51,7 +51,9 @@ namespace LoginForm
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Form1 jkl = new Form1();
+            this.Hide();
+            jkl.Show();
         }
     }
 }

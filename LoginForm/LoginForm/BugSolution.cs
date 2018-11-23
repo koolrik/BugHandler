@@ -52,7 +52,7 @@ namespace LoginForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -76,10 +76,10 @@ namespace LoginForm
             while (sdr.Read())
             {
                 string description = (string)sdr["Description"].ToString();
-                richTextBox1.Text = description;
+                textEditorControl1.Text = description;
 
                 string solution = (string)sdr["Solution"].ToString();
-                richTextBox2.Text = solution;
+                textEditorControl2.Text = solution;
 
                 BugHandlerEntities1 bte = new BugHandlerEntities1();
                 var item = bte.Issues.Where(a => a.Title == comboBox1.Text).SingleOrDefault();
@@ -102,6 +102,18 @@ namespace LoginForm
         }
 
         private void textEditorControl1_Load(object sender, EventArgs e)
+        {
+            string dric = Application.StartupPath;
+            FileSyntaxModeProvider fsmp;
+            if (Directory.Exists(dric))
+            {
+                fsmp = new FileSyntaxModeProvider(dric);
+                HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmp);
+                textEditorControl1.SetHighlighting("C#");
+            }
+        }
+
+        private void textEditorControl2_Load(object sender, EventArgs e)
         {
             string dric = Application.StartupPath;
             FileSyntaxModeProvider fsmp;

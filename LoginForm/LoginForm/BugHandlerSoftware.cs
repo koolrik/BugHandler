@@ -42,7 +42,9 @@ namespace LoginForm
 
         private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Form1 ghj = new Form1();
+            this.Hide();
+            ghj.Show();
         }
 
         private void viewOnlineToolStripMenuItem_Click(object sender, EventArgs e)

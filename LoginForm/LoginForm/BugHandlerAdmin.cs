@@ -52,7 +52,9 @@ namespace LoginForm
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            Form1 f1 = new Form1();
+            f1.Show();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -67,7 +69,9 @@ namespace LoginForm
 
         private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AddUser au = new AddUser();
+            au.MdiParent = this;
+            au.Show();
         }
     }
 }

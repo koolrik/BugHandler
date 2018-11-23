@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ICSharpCode.TextEditor.Document;
 
 namespace LoginForm
 {
@@ -48,7 +49,7 @@ namespace LoginForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Trim() == "" || richTextBox1.Text.Trim() == "")
+            if (textBox1.Text.Trim() == "" || textEditorControl1.Text.Trim() == "")
             {
                 MessageBox.Show("One or More Fields Are Empty");
             }
@@ -60,7 +61,7 @@ namespace LoginForm
                 var InsIssue = new Issue
                 {
                     Title = textBox1.Text.Trim(),
-                    Description = richTextBox1.Text.Trim(),
+                    Description = textEditorControl1.Text.Trim(),
                     Image = ms.ToArray(),
                     Status = "PENDING",
                     InsertedBy = session.Username
@@ -83,6 +84,25 @@ namespace LoginForm
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+            
+        }
+
+        private void textEditorControl1_Load(object sender, EventArgs e)
+        {
+            string dric = Application.StartupPath;
+            FileSyntaxModeProvider fsmp;
+            if (Directory.Exists(dric))
+            {
+                fsmp = new FileSyntaxModeProvider(dric);
+                HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmp);
+                textEditorControl1.SetHighlighting("C#");
+            }
         }
     }
 }

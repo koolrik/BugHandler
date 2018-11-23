@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ICSharpCode.TextEditor.Document;
 
 namespace LoginForm
 {
@@ -81,7 +82,7 @@ namespace LoginForm
             {
                 BugHandlerEntities1 bte = new BugHandlerEntities1();
                 var data = bte.Issues.Where(a => a.Title == comboBox1.Text).SingleOrDefault();
-                data.Description = richTextBox1.Text;
+                data.Description = textEditorControl1.Text;
                 data.SolvedBy = comboBox2.Text;
                 if (data.Status == "ReOpened")
                 {
@@ -115,10 +116,10 @@ namespace LoginForm
             while (sdr.Read())
             {
                 string description = (string)sdr["Description"].ToString();
-                richTextBox1.Text = description;
+                textEditorControl1.Text = description;
 
                 string solution = (string)sdr["Solution"].ToString();
-                richTextBox2.Text = solution;
+                textEditorControl2.Text = solution;
                 BugHandlerEntities1 bte = new BugHandlerEntities1();
                 var item = bte.Issues.Where(a => a.Title == comboBox1.Text).SingleOrDefault();
                 textBox1.Text = item.Status;
@@ -158,6 +159,35 @@ namespace LoginForm
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void textEditorControl1_Load(object sender, EventArgs e)
+        {
+            string dric = Application.StartupPath;
+            FileSyntaxModeProvider fsmp;
+            if (Directory.Exists(dric))
+            {
+                fsmp = new FileSyntaxModeProvider(dric);
+                HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmp);
+                textEditorControl1.SetHighlighting("C#");
+            }
+        }
+
+        private void textEditorControl2_Load(object sender, EventArgs e)
+        {
+            string dric = Application.StartupPath;
+            FileSyntaxModeProvider fsmp;
+            if (Directory.Exists(dric))
+            {
+                fsmp = new FileSyntaxModeProvider(dric);
+                HighlightingManager.Manager.AddSyntaxModeFileProvider(fsmp);
+                textEditorControl1.SetHighlighting("C#");
+            }
         }
     }
 }

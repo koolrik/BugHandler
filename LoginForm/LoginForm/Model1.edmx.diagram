@@ -5,8 +5,8 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d225cd661640480a94c0c94b1dda92cc" Name="Diagram1">
-        <EntityTypeShape EntityType="BugHandlerModel.Issue" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BugHandlerModel.Login" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugHandlerModel.Issue" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BugHandlerModel.Login" Width="1.5" PointX="2.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
