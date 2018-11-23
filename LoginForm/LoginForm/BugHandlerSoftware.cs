@@ -40,7 +40,7 @@ namespace LoginForm
 
         private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
